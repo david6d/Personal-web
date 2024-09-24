@@ -1,0 +1,131 @@
+@import '../abstract/colors';
+
+.skill-set {
+    background-color: $color-blue-light;
+
+    &__heading {
+        @include h2;
+        font-weight: 200;
+        margin-bottom: 10rem;
+        padding-top: 10rem;
+    }
+
+    @media (max-width: 500px) {
+        &__heading {
+            font-size: 7rem;
+        }
+    }
+
+    @media (max-width: 350px) {
+        &__heading {
+            font-size: 6rem;
+        }
+    }
+    
+    &__wrapper {
+        width: 100%;
+        margin: 0 auto;
+        
+        display: grid;
+        width: 90%;
+        grid-template-rows: min-content;
+        grid-template-columns: repeat(auto-fill, minmax(35rem, 50rem));
+        justify-content: center;
+        grid-gap: 5rem;
+        padding-bottom: 15rem;
+
+        &-item {
+            position: relative;
+            transition: all .5s;
+            box-shadow: 0.1rem 0.1rem 0.7rem $color-grey-dark;
+        }
+
+        &-item img {
+            width: 100%;
+            object-fit: cover;
+            transition: all .5s .4s;
+        }
+
+        &-progress-percent {
+            width: 100%;
+            height: 0;
+            background: linear-gradient(rgba(0, 0, 112, .7),  rgba(255, 148, 112, .9));
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            font-size: 6rem; 
+            color: $color-white;
+            font-weight: 200;
+            transition: all .5s;
+            opacity: .8;
+            letter-spacing: .2rem;
+            z-index: 20;
+        }
+    
+        &-progress-text {
+            width: 100%;
+            position: absolute;
+            top: 30%;
+            text-align: center;
+            font-size: 2rem;
+            color: $color-white;
+            font-weight: 300;
+            opacity: 0;
+            transition: all .5s .8s;
+            z-index: 10;
+            text-transform: uppercase;
+            letter-spacing: .5rem;
+        }
+
+        &-link {
+            position: absolute;
+            bottom: 7rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: $color-white;
+            font-size: 1.1rem;
+            background: rgba(255, 148, 112, .7);
+            border: 1px solid rgba(255, 148, 112, 1);
+            width: 15rem;
+            height: 3rem;
+            line-height: 3rem;
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+            opacity: 0;
+            transition: all .5s 1s;
+        }
+
+        &-item:hover &-progress-percent {
+            height: 0 !important;
+            overflow: hidden;
+        }
+
+        &-item:hover &-progress-text,
+        &-item:hover &-link  {
+            opacity: 1;
+        }
+
+        &-item:hover .skill-set-img {
+            filter: brightness(35%);
+        }
+    }  
+}
+
+
+// Animate Skill-Set
+
+.hidden-skill-set {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition: all 1.5s;
+}
+
+.show-skill-set-animate {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+

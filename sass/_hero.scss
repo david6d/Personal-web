@@ -1,0 +1,273 @@
+@import '../abstract/colors';
+@import '../abstract/mixins';
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient( rgba(67, 91, 231, 0.7), rgba(17, 76, 124, 0.8), rgba(0,0,0,.2)),
+    linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.8)), url(../img/Image-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2.5rem 10rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1400px) {  
+        flex-wrap: wrap;  
+        justify-content: center;  
+        text-align: center;
+        height: auto;
+    }
+
+    @media (max-width: 600px) {  
+       padding-left: 5rem;
+       padding-right: 5rem;
+    }
+
+    &__my-name {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        letter-spacing: .7rem;
+        z-index: 10;
+        color: $color-white;
+        font-weight: 300;
+        position: absolute;
+        top: 3rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 200;
+        opacity: 0;
+        animation: starter-3 2s 3s forwards;
+    }
+
+    &__left {
+        width: 60%;  
+
+        @media (max-width: 1400px) {       
+            margin: 10rem 0 12rem 0
+        }
+
+        @media (max-width: 1000px) {       
+            width: 90%;
+        }
+
+        @media (max-width: 800px) {       
+            width: 100%;
+        }
+
+        &-heading {
+            font-size: 9rem;
+            font-weight: 100;
+            line-height: 1;
+            margin-bottom: 4rem;
+            letter-spacing: .5rem;
+            color: $color-blue-light;
+            opacity: 0;
+            animation: starter 2s .7s forwards; 
+        }
+
+        @media (max-width: 1600px) {
+            &-heading  {
+                font-size: 7rem;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            &-heading  {
+                font-size: 6rem;
+                margin-bottom: 5rem;
+            }
+        }
+
+        @media (max-width: 300px) {
+            &-heading  {
+                font-size: 5rem;
+            }
+        }
+
+
+        &-heading span {
+            color: rgba(255, 148, 112, .9);
+            font-weight: 100;
+        }
+
+        &-text {
+            width: 60rem;
+            color: rgba(251,251,251,.7);
+            font-size: 2.1rem;
+            margin-bottom: 10rem;
+            font-family: "Inconsolata", sans-serif;
+            line-height: 1.5;
+            font-weight: 300;
+            opacity: 0;
+            animation: starter 2s 1.2s forwards;
+        }
+
+        @media (max-width: 1400px) {  
+            &-text {
+                width: 100%;
+            }
+        }
+
+        &-btns a {
+            color: $color-white;
+            cursor: pointer;
+        }
+
+        &-btns a:first-child {
+            margin-right: 7rem;
+        }
+
+        @media (max-width: 800px) {
+            &-btns a:first-child {
+                margin-right: 0;
+                margin-bottom: 7rem;
+            }
+        }
+
+        &-btn {
+            width: 25rem;
+            height: 6rem;
+            display: inline-block;
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: .3rem;
+            position: relative;
+            text-align: center;
+            line-height: 6rem;
+            transition: all .3s;
+            opacity: 0;
+            animation: starter 2s 2s forwards;
+        }
+
+        @media (max-width: 800px) {
+            &-btn {
+                width: 50%;
+                text-align: center;
+                
+            }
+        }
+
+        &-btn::before {
+            @include btn-before-after;
+            top: 0;
+            left: 0;
+            border-top: 2px solid $color-primary;
+            border-left: 2px solid $color-primary;
+        }
+
+        &-btn::after {
+            @include btn-before-after;
+            bottom: 0;
+            right: 0;
+            border-bottom: 2px solid $color-primary;
+            border-right: 2px solid $color-primary;
+        }
+
+        &-btn:hover::before,
+        &-btn:hover::after {
+            width: 99%;
+            height: 97%;
+        }
+
+        &-btn:hover {
+            letter-spacing: .7rem;
+            background-color: transparent;
+            font-weight: 600;
+        }
+    }
+
+    &__right {
+        width: 35%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 1400px) {
+            width: 50%;
+
+        }
+
+        @media (max-width: 400px) {
+            width: 60%;
+
+        }
+
+
+        &-element {
+            width: 30rem;
+            height: 40rem;
+            background: linear-gradient(rgba(251,251,251, .1), rgba(0,0,0,0));
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            transform: rotateY(30deg);
+            opacity: 0;
+            animation: starter-2 2s 2s forwards;
+
+            & img {
+                opacity: .5;
+                filter:sepia(40%);
+                height: 100%;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            &-element  {
+                margin-bottom: 10rem;
+            }
+        }
+
+        &-element:hover {
+            filter: brightness(90%);
+        }
+
+        &-element:nth-child(2){
+            animation-delay: 2.3s;
+        }
+
+        &-element:nth-child(3){
+            animation-delay: 2.6s;
+        }
+
+        &-element:nth-child(4){
+            animation-delay: 2.9s;
+        }
+
+        &-element:nth-child(5){
+            animation-delay: 3.2s;
+        }
+
+        &-element:nth-child(6){
+            animation-delay: 3.5s;
+        }
+    }
+}
+
+
+@keyframes starter {
+    0% {opacity: 0;
+        transform: translateX(-4rem);}
+    100% {opacity: 1;}
+}
+
+@keyframes starter-1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes starter-2 {
+    0% {opacity: 0;
+        transform: translateX(7rem);}
+    100% {opacity: 1;}
+}
+
+@keyframes starter-3 {
+    0% {opacity: 0;
+        top: -3rem;}
+    100% {opacity: 1;}
+}
+
+
+

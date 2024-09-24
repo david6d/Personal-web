@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "wS-jg5qeeiEKzKSx5",
+      });
+    })();
+    </script>
+  </head>
+  <body>
+    <main class="container">
+
+      <!-- Hero Section -->
+      <section class="hero" id="hero-section">
+        <h2 class="hero__my-name">David Karpiel</h2>
+        <div class="hero__left">
+          <h1 class="hero__left-heading">
+            <span>Front-End</span> Developer with a Passion for <span>Design</span>
+          </h1>
+          <p class="hero__left-text">
+            The challenge of bringing a design to life and ensuring it functions
+            seamlessly across different devices is something I find incredibly
+            rewarding.
+          </p>
+          <div class="hero__left-btns">
+            <a href="#about-me" class="hero__left-btn">About Me</a>
+            <a href="#contact" class="hero__left-btn">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero__right">
+            <div class="hero__right-element" data-value="1"></div>
+            <div class="hero__right-element" data-value="1">
+              <img src="img/row-1-column-1.png">
+            </div>
+            <div class="hero__right-element" data-value="1">
+              <img src="img/row-1-column-2.png">
+            </div>
+            <div class="hero__right-element" data-value="1">
+              <img src="img/row-1-column-3.png">
+            </div>
+            <div class="hero__right-element" data-value="1"></div>
+        </div>
+      </section>
+      <!-- End of Hero Section -->
+
+      <!-- Navigation -->
+      <nav class="nav center">
+        <a href="#hero-section" class="nav__link">home</a>
+        <a href="#about-me" class="nav__link">about</a>
+        <a href="#skill-set" class="nav__link">skill-set</a>
+        <a href="#contact" class="nav__link">contact</a>
+      </nav>
+      <!-- End of Navigation -->
+
+      <!-- About Me Section -->
+      <section class="about-me" id="about-me">
+        <div class="about-me__wrapper hidden-animate">
+          <h2 class="about-me__heading">about me</h2>
+          <div class="about-me__text-wrapper">
+            <p class="about-me__text">What motivates me most about front-end development is the constant evolution of the web and the opportunity to learn new skills every day.</p>
+            <p class="about-me__text">The real motivation from front-end development is that my work will be seen and will bring joy to users and fulfill the needs of clients.</p>
+            <p class="about-me__text">Beyond the technology, I am inspired by the chance to leave a positive mark through my work. I believe that well-crafted web applications can improve lives, streamline businesses, and connect people across the globe.</p>
+          </div>
+          <div class="about-me__controls">
+            <div class="about-me__controls-left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="about-me__controls-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="about-me__icons">
+            <i class="fa-brands fa-css3-alt about-me__icons-icon"></i>
+            <i class="fa-brands fa-html5 about-me__icons-icon"></i>
+            <i class="fa-brands fa-js about-me__icons-icon"></i>
+            <i class="fa-brands fa-github about-me__icons-icon"></i>
+            <i class="fa-brands fa-figma about-me__icons-icon"></i>
+          </div>
+          <button class="about-me__cv">resume (cz)</button>
+          <a href="img/David_Karpiel_CV.pdf" target="_blank" class="about-me__cv-pdf">resume pdf (cz)</a>
+          <div class="about-me__cv-wrapper hidden">
+            <img src="img/resume.png" alt="resume" class="about-me__cv-wrapper-resume">
+            <button class="about-me__cv-wrapper-close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="interests hidden-animate">
+          <h3 class="interests__heading">my interests</h3>
+          <div class="interests__wrapper-icons">
+            <div class="interests__cards">
+              <div class="interests__cards-card">
+                <div class="interests__cards-card-front">
+                  <i class="fa-solid fa-person-running"></i>
+                </div>
+                <div class="interests__cards-card-back">running</div>
+              </div>
+            </div>
+            <div class="interests__cards">
+              <div class="interests__cards-card">
+                <div class="interests__cards-card-front">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div class="interests__cards-card-back"><span>bodybuilding</span></div>
+              </div>
+            </div>
+            <div class="interests__cards">
+              <div class="interests__cards-card">
+                <div class="interests__cards-card-front">
+                  <i class="fa-solid fa-person-hiking"></i>
+                </div>
+                <div class="interests__cards-card-back">hiking</div>
+              </div>
+            </div>
+            <div class="interests__cards">
+              <div class="interests__cards-card">
+                <div class="interests__cards-card-front">
+                  <i class="fa-solid fa-landmark"></i>
+                </div>
+                <div class="interests__cards-card-back">history</div>
+              </div>
+            </div>
+            <div class="interests__cards">
+              <div class="interests__cards-card">
+                <div class="interests__cards-card-front">
+                  <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <div class="interests__cards-card-back">gaming</div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+      <!-- End of About Me Section -->
+
+      <!-- Skill-Set Section -->
+
+      <section class="skill-set" id="skill-set">
+        <div class="skill-set__heading center hidden-animate">skill-set</div>
+        <div class="skill-set__wrapper">
+          <div class="skill-set__wrapper-item item--1 hidden-skill-set ">
+            <div class="skill-set__wrapper-progress-percent"><span>100</span>%</div>
+            <div class="skill-set__wrapper-progress-text">html / css / web design</div>
+            <img src="img/learning/img-1.png" class="skill-set-img">
+            <a href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--2 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>100</span>%</div>
+            <div class="skill-set__wrapper-progress-text">html / css / sass</div>
+            <img src="img/learning/img-2.png" class="skill-set-img" >
+            <a href="https://www.udemy.com/course/advanced-css-and-sass/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--3 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>35</span>%</div>
+            <div class="skill-set__wrapper-progress-text">html / css</div>
+            <img src="img/learning/img-3.png" class="skill-set-img" >
+            <a href="https://www.udemy.com/course/html-and-css-bootcamp/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--4 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>100</span>%</div>
+            <div class="skill-set__wrapper-progress-text">css / js</div>
+            <img src="img/learning/img-4.png" class="skill-set-img" >
+            <a href="https://www.udemy.com/course/css-animation-transitions-and-transforms-creativity-course/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--5 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>53</span>%</div>
+            <div class="skill-set__wrapper-progress-text"> html / css / js</div>
+            <img src="img/learning/img-5.png" class="skill-set-img" >
+            <a href="https://www.udemy.com/course/10-mega-responsive-websites-with-html-css-and-javascript/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--6 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>40</span>%</div>
+            <div class="skill-set__wrapper-progress-text">js</div>
+            <img src="img/learning/img-6.png" class="skill-set-img">
+            <a href="https://www.udemy.com/course/the-complete-javascript-course/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--7 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>100</span>%</div>
+            <div class="skill-set__wrapper-progress-text">web design / figma</div>
+            <img src="img/learning/img-7.png" class="skill-set-img" >
+            <a href="https://www.udemy.com/course/freelance-web-design-from-design-to-development-to-making-money/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--8 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>100</span>%</div>
+            <div class="skill-set__wrapper-progress-text">web design / figma / ui / ux</div>
+            <img src="img/learning/img-8.png" class="skill-set-img" >
+            <a href="https://www.udemy.com/course/figma-ux-ui-design-user-experience-tutorial-course/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--9 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>100</span>%</div>
+            <div class="skill-set__wrapper-progress-text">web testing / js / playwright</div>
+            <img src="img/learning/img-9.png" class="skill-set-img">
+            <a href="https://www.udemy.com/course/automated-web-testing/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--10 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>100</span>%</div>
+            <div class="skill-set__wrapper-progress-text">seo / wordpress</div>
+            <img src="img/learning/img-10.png" class="skill-set-img">
+            <a href="https://www.udemy.com/course/ultimate-seo-training-course/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--11 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>NOT STARTED</span></div>
+            <div class="skill-set__wrapper-progress-text">html / css / js</div>
+            <img src="img/learning/img-11.png" class="skill-set-img">
+            <a href="https://www.udemy.com/course/full-stack-crash-course/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+          <div class="skill-set__wrapper-item item--12 hidden-skill-set">
+            <div class="skill-set__wrapper-progress-percent"><span>NOT STARTED</span></div>
+            <div class="skill-set__wrapper-progress-text">penetration testing</div>
+            <img src="img/learning/img-12.png" class="skill-set-img">
+            <a href="https://www.udemy.com/course/web-security-and-bug-bounty-learn-penetration-testing/?couponCode=24T4MT90924A" target="_blank" class="skill-set__wrapper-link">Go to Udemy</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of Skill-Set Section -->
+
+      <!-- Footer Section -->
+
+      <footer class="footer" id="contact">
+        <div class="footer__heading hidden-footer">contact me</div>
+        <form class="footer__form hidden-footer">
+          <input type="text" id="full-name" placeholder="Name" class="footer__form-input-name">
+          <input type="email" id="email-id" placeholder="Email" class="footer__form-input-email">
+          <textarea placeholder="Message" id="message" class="footer__form-textarea"></textarea>
+          <input type="submit" onclick="SendMail()" value="submit" class="footer__form-submit-btn">
+        </form>
+        <div class="social-media center hidden-footer">
+          <a href="https://www.facebook.com/david.karpiel.1" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/david-karpiel-0563162bb/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </div>
+        <p class="copyright hidden-footer">Copyright &copy; 2024 David Karpiel. All Rights Reserved</p>
+      </footer>
+      <!-- End of Footer Section -->
+    <script src="script.js"></script>
+  </body>
+</html>

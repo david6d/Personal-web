@@ -1,0 +1,43 @@
+@import './colors';
+
+@mixin center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin h2 {
+    font-size: 8rem;
+    text-transform: capitalize;
+    text-shadow: .1rem .1rem .3rem $color-grey-light;
+    letter-spacing: .6rem;
+}
+
+@mixin resume {
+    align-self: center;
+    margin-bottom: 12rem;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: .3rem;
+    box-shadow: inset .1rem .1rem .4rem rgba(0, 0, 112, .2), inset -.1rem -.1rem .2rem rgba(255, 148, 112, .5);
+    outline: none;
+    border: none;
+    transition: all .5s;
+}
+
+@mixin resume-hover {
+    box-shadow: inset .1rem .1rem .4rem rgba(0, 0, 112, 1), inset -.1rem -.1rem .2rem rgba(255, 148, 112, 1);
+    font-weight: 500;
+}
+
+@mixin btn-before-after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    transition: all .3s;
+}
