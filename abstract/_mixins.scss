@@ -30,8 +30,7 @@
 }
 
 @mixin resume-hover {
-    box-shadow: inset .1rem .1rem .4rem rgba(0, 0, 112, 1), inset -.1rem -.1rem .2rem rgba(255, 148, 112, 1);
-    font-weight: 500;
+    box-shadow: inset .1rem .1rem .4rem rgba(0, 0, 112, 1), inset -.1rem -.1rem .4rem rgba(255, 148, 112, 1);
 }
 
 @mixin btn-before-after {

@@ -136,32 +136,3 @@
         text-align: center;
     }
 }
-
-
-// Animate Footer
-.hidden-footer {
-    opacity: 0;
-    transform: translateY(100%);
-    transition: all 1.5s;
-}
-
-.show-footer {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.footer__heading.hidden-footer {
-    transition-delay: .5s;
-}
-
-.footer__form.hidden-footer {
-    transition-delay: .5s;
-}
-
-.social-media.hidden-footer {
-    transition-delay: 1s;
-}
-
-.copyright.hidden-footer {
-    transition-delay: 1s;
-}

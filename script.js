@@ -173,7 +173,7 @@ window.onscroll = () => {
     let secDistanceInterest = secInterest.offsetTop - 600;
     let secDistanceSkillSet = secSkillSet.offsetTop - 400;
     let secDistanceSkillSet_2 = secSkillSet_2.offsetTop - 700;
-    let secDistanceFotter = secFooter.offsetTop - 800;
+    let secDistanceFotter = secFooter.offsetTop - 500;
     
     const scroll = (distance, element, animate) => {
         if (scrollDistance >= distance) {
@@ -200,10 +200,10 @@ window.onscroll = () => {
         })
     }
 
-    scroll(secDistanceFotter, secHead, 'show-footer')
-    scroll(secDistanceFotter, secForm, 'show-footer')
-    scroll(secDistanceFotter, secIcons, 'show-footer')
-    scroll(secDistanceFotter, secCopy, 'show-footer')   
+    scroll(secDistanceFotter, secHead, 'show-animate')
+    scroll(secDistanceFotter, secForm, 'show-animate')
+    scroll(secDistanceFotter, secIcons, 'show-animate')
+    scroll(secDistanceFotter, secCopy, 'show-animate')   
 }
 
 // End of Animate

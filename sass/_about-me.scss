@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10rem 0;
-    overflow: hidden;
+    
     
     &__wrapper {
         width: 50%;
@@ -18,7 +18,8 @@
         flex-direction: column;
         text-align: center;
         justify-content: space-around;
-        position: relative
+        position: relative;
+        overflow: hidden;
     }
 
     @media (max-width: 1100px) {
@@ -172,6 +173,7 @@
         width: 23rem;
         padding-left: 1rem;
         height: 5rem;
+        transition: all .5s;
     }
 
     @media (max-width: 700px) {
