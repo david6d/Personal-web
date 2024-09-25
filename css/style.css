@@ -513,7 +513,7 @@ html {
         transform: rotateY(180deg);
         text-transform: uppercase;
         letter-spacing: .4rem;
-        font-weight: 300; }
+        font-weight: 400; }
   .interests__cards:hover .interests__cards-card {
     transform: rotateY(180deg); }
 
